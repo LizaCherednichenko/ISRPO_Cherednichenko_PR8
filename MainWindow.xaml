@@ -26,10 +26,10 @@
         <Label Grid.Row="2" Grid.Column="0" Content="Dx" HorizontalAlignment="Right"/>
         <Label Grid.Row="3" Grid.Column="0" Content="A" HorizontalAlignment="Right"/>
 
-        <TextBox x:Name="X0" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
-        <TextBox x:Name="Xk" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
-        <TextBox x:Name="Dx" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
-        <TextBox x:Name="A" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="X0" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="Xk" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="4" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="Dx" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="0,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="A" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="0,75" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
 
 
         <TextBox x:Name="X" Grid.Row="4" Grid.Column="0" Margin="5, 25, 5, 5" TextWrapping="Wrap" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
