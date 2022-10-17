@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ISRPO_Cherednichenko_PR8
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
@@ -33,7 +32,7 @@ namespace ISRPO_Cherednichenko_PR8
             double x0 = Convert.ToDouble(X0.Text);
             double xk = Convert.ToDouble(Xk.Text);
             double dx = Convert.ToDouble(Dx.Text);
-            double a = Convert.ToDouble(A.Text);
+            double d = Convert.ToDouble(D.Text);
 
             //Цикл для табулирования функции
 
@@ -41,21 +40,13 @@ namespace ISRPO_Cherednichenko_PR8
 
             while (x <= (xk + dx / 2))
             {
-                double y = a * Math.Log(x);
+                double y = Math.Pow(x,4) + Math.Cos(2+ Math.Pow(x,3) - d);
 
                 X.Text += "x=" + Convert.ToString(x) + Environment.NewLine;
                 Y.Text += "y=" + Convert.ToString(y) + Environment.NewLine;
 
                 x = x + dx;
             }
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Window window1 = new Window1();
-            window1.Show();
-
         }
     }
 }
