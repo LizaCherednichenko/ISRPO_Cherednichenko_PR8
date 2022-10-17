@@ -24,5 +24,31 @@ namespace ISRPO_Cherednichenko_PR8
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            //считывание начальных данных
+
+            double x0 = Convert.ToDouble(X0.Text);
+            double xk = Convert.ToDouble(Xk.Text);
+            double dx = Convert.ToDouble(Dx.Text);
+            double a = Convert.ToDouble(A.Text);
+
+            //Цикл для табулирования функции
+
+            double x = x0;
+
+            while (x <= (xk + dx / 2))
+            {
+                double y = a * Math.Log(x);
+
+                X.Text += "x=" + Convert.ToString(x) + Environment.NewLine;
+                Y.Text += "y=" + Convert.ToString(y) + Environment.NewLine;
+
+                x = x + dx;
+            }
+
+        }
     }
 }

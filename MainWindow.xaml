@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ISRPO_Cherednichenko_PR8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Чередниченко ПР8" Height="450" Width="330.03">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="X0" HorizontalAlignment="Right"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Xk" HorizontalAlignment="Right"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Dx" HorizontalAlignment="Right"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="A" HorizontalAlignment="Right"/>
+
+        <TextBox x:Name="X0" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="Xk" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="Dx" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+        <TextBox x:Name="A" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text="" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="5"/>
+
+
+        <TextBox x:Name="X" Grid.Row="4" Grid.Column="0" Margin="5, 25, 5, 5" TextWrapping="Wrap" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+        <TextBox x:Name="Y" Grid.Row="4" Grid.Column="1" Margin="5, 25, 5, 5" TextWrapping="Wrap" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+
+        <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Margin="90, 10, 90, 5" Content="Вычислить" Click="Button_Click"/>
+
     </Grid>
 </Window>
